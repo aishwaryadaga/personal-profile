@@ -51,18 +51,26 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 nav ul li a {
   color: #e0e1dd;
   text-decoration: none;
   font-size: 18px;
+  padding: 8px 15px;
+  background-color: #1b263b; /* Button background color */
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ccc;
+  background-color: #274060; /* Slightly lighter color for hover effect */
+  color: #e0e1dd;
+  transform: scale(1.05); /* Small scaling effect on hover */
 }
+
 
 /* nav {
   background-color: #778da9;
