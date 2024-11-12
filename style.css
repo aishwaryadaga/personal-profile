@@ -131,7 +131,7 @@ section h2 {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 30px;
+  gap: 20px;
   justify-items: stretch; /* Stretch items to the full width of their grid cell */
 }
 
@@ -146,6 +146,7 @@ section h2 {
   height: 380px; /* Fixed height for uniformity */
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+  min-width: 260px;
 }
 
 .project-card:hover {
@@ -193,14 +194,14 @@ section h2 {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .project-grid {
+@media (max-width: 1024px) {
+  .projects-container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
   }
 }
 
 @media (max-width: 480px) {
-  .project-grid {
+  .projects-container {
     grid-template-columns: 1fr; /* 1 column on small screens */
   }
 }
