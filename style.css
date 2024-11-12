@@ -282,4 +282,8 @@ footer p {
   .header-text p {
     font-size: 1em;
   }
+
+  .header-content {
+    flex-direction: column;
+  }
 }
