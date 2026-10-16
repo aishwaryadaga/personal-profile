@@ -50,3 +50,18 @@ h1{background:#faf8f1;box-shadow:6px 6px 0 #8497cb}
 .contact-section{background:#303f65;box-shadow:6px 6px 0 #b6c3e0}
 .contact-section>a{color:#e2e9ff}
 a:focus-visible,button:focus-visible{outline-color:#536caf}
+
+.hero-aside{transform:none}
+
+/* Small margin-note accents, kept clear of the reading column. */
+.doodle{position:absolute;z-index:3;pointer-events:none;color:#3e568f;line-height:1}
+.doodle-spark{top:-35px;right:-25px;font-family:Georgia,serif;font-size:76px;transform:rotate(12deg);text-shadow:2px 2px 0 #f8f6f0}
+.doodle-code{bottom:65px;left:-28px;padding:11px 9px;background:#faf8f1;border:1.5px solid var(--ink);border-radius:48% 53% 43% 51%;font:600 22px 'DM Mono',monospace;transform:rotate(-12deg);box-shadow:3px 3px 0 #b6c3e0}
+.heading-icon{display:inline-block;margin-right:5px;font-size:.95em;vertical-align:baseline;color:#536caf}
+.internship-note{max-width:500px;margin:20px 0 0;padding-left:13px;border-left:3px solid #8296ca;font-size:14px;font-weight:600;line-height:1.7;color:#35466f}
+.project-details{font-size:14px;color:#535a68}.project-details summary{cursor:pointer;color:#3e568f;text-decoration:underline;text-underline-offset:4px}.project-details p{margin-top:12px}
+#background .background-grid>.background-card:first-child{grid-column:1/-1}
+.contact-arrow{display:inline-block;margin-left:10px;color:#d3dfff;font-size:36px;vertical-align:middle;transform:rotate(9deg)}
+.beyond-card{position:relative;padding-right:66px}
+.beyond-card:after{content:'✧';position:absolute;right:22px;top:22px;font:42px Georgia,serif;color:#687fb5;pointer-events:none}
+@media(max-width:760px){.doodle-spark{font-size:61px;top:-26px;right:-12px}.doodle-code{left:-12px;font-size:19px;bottom:57px}.section-heading h2{line-height:1.5}.heading-icon{margin-right:2px}.beyond-card{padding-right:58px}}
