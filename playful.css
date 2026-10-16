@@ -1,0 +1,52 @@
+/* Colorful editorial experiment. The prior design is saved in Git. */
+:root{--paper:#f4f1eb;--ink:#222b48;--muted:#5c6474;--line:#c9ccd5;--coral:#4246a8;--max:1120px}
+body{background:var(--paper);color:var(--ink)}
+.site-header{background:var(--paper);border-bottom:2px solid var(--ink);padding:25px 32px}
+.wordmark{color:var(--ink);font-size:25px}.wordmark span{color:#5455c7}
+nav a{color:var(--ink)}.nav-cta{border:1.5px solid var(--ink);border-radius:0;box-shadow:3px 3px 0 #b9cfad;background:#dbe7d4}
+.hero{position:relative;grid-template-columns:minmax(0,1fr) 360px;gap:60px;padding:80px 42px 85px;background:#e2e0f2;border-bottom:2px solid var(--ink);overflow:hidden}
+.hero-copy{position:relative;z-index:2}.hero .eyebrow{color:var(--ink);font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.04em;max-width:360px;margin-bottom:32px}
+h1{display:inline-block;font-family:'Manrope',Arial,sans-serif;font-size:clamp(38px,5.2vw,62px);font-weight:800;letter-spacing:-2.5px;line-height:1.04;padding:16px 22px 20px;margin:0 -16px 32px;background:#d9edc5;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);transform:rotate(-3deg)}
+.hero-intro{font-size:16px;line-height:1.9;color:#353e55;max-width:530px}.hero-actions{margin-top:28px;gap:14px}.button{border:1.5px solid var(--ink);border-radius:0;box-shadow:3px 3px 0 var(--ink);font-size:13px;padding:11px 15px;color:var(--ink);background:#f9f7f1}.button-primary{background:#3f54bb;color:white}.button-primary:hover{background:#304295;color:white}.button-secondary:hover{background:#d9edc5;color:var(--ink)}
+.social-row a{font-family:'DM Mono',monospace;font-size:11px;color:var(--ink)}
+.hero-aside{position:relative;margin:0;transform:rotate(3deg);align-self:center}.hero-aside img{width:100%;aspect-ratio:4/5;object-fit:cover;border:2px solid var(--ink);border-radius:0;box-shadow:10px 10px 0 #b7cbb0}.hero-aside:after{content:'ATLANTA, GA';position:absolute;bottom:20px;right:-12px;padding:10px 15px;background:#f8f5e8;border:2px solid var(--ink);font:13px 'DM Mono',monospace;transform:rotate(-8deg)}
+.section{padding:62px 42px}.section-heading{margin-bottom:38px}.section-heading h2{display:inline-block;padding:10px 18px;border:1.5px solid var(--ink);background:#dce8f8;color:var(--ink);font-family:'DM Mono',monospace;font-size:25px;font-weight:500;letter-spacing:-1px;box-shadow:4px 4px 0 #aabadd;transform:rotate(-1.5deg)}
+.timeline{border-top:2px solid var(--ink)}.role{padding:30px 0;border-bottom:1px solid #c5c9d1;gap:30px}.role-meta{color:#666b7b;font-family:'DM Mono',monospace;font-size:10px}.company{color:#4446a0;font:600 13px 'DM Mono',monospace}.role h3{color:var(--ink);font-size:18px}.role h3 span{color:#6a7082}.role p,.role ul{font-size:15px;line-height:1.85;color:#4d5566}.tags span{background:#e4e8f0;color:#424b65;border-radius:0;font-size:10px;padding:3px 8px}
+.work-section{margin:0;background:#dce7d5;border-radius:0;border-block:2px solid var(--ink);padding:56px 42px}.work-section .section-heading h2{background:#e2def3;box-shadow:4px 4px 0 #a3b79c}.text-link{color:var(--ink);font-family:'DM Mono',monospace;font-size:11px}.project-grid{gap:22px}.project-card,.project-highlight{background:#fbfaf4;border:1.5px solid var(--ink);border-radius:0;padding:27px;box-shadow:4px 4px 0 #aabb9e}.project-card h3{font-family:'Manrope',Arial,sans-serif;font-size:23px;font-weight:700;line-height:1.35;color:var(--ink)}.project-type{font-family:'DM Mono',monospace;font-size:10px;color:#4d5685}.project-card p:not(.project-type){font-size:15px;line-height:1.8;color:#535a68}.project-highlight{background:#efebfa}.project-highlight .tags span,.project-card .tags span{background:#e1e6d9;color:#424b43}.project-result strong{color:#3f4f91;font-family:'DM Mono',monospace}.project-result span{color:#535a68}
+.background-grid{gap:22px}.background-card{border:1px solid #bfc4d0;border-radius:0;background:#faf9f5;padding:25px}.card-label{font-family:'DM Mono',monospace;color:#434c85;font-size:11px}.background-card h3{color:var(--ink)}.publication-card{background:#e8e3f3}.publication-card h3{font-family:'Manrope',Arial,sans-serif;font-size:18px;line-height:1.6;font-weight:600}.education-item h3{font-size:18px}.education-item p{font-size:14px;line-height:1.8}.skills-card{background:#e5ebf5}.skills-card dl{font-size:13px}.skills-card dt{color:#303b5e}.beyond-card{background:#dfe9d7;border-color:#bdcdb4}.beyond-card strong{font-size:17px;color:#324332}.beyond-card p{font-size:14px}
+.contact-section{margin:14px 42px 30px;padding:36px;background:#4355a7;color:#fff;border:2px solid var(--ink);border-radius:0;box-shadow:6px 6px 0 #c3b7df}.contact-section h2{font:500 28px 'DM Mono',monospace;color:#fff}.contact-section>a{color:#e3efce;font-size:16px}footer{padding:28px 42px;color:#666d80}
+a:focus-visible,button:focus-visible{outline:3px solid #6f4fba;outline-offset:5px}
+@media(max-width:900px){.hero{grid-template-columns:minmax(0,1fr) 290px;gap:38px;padding-inline:32px}h1{font-size:45px}.hero-intro{font-size:15px}}
+@media(max-width:760px){.site-header{padding:22px 24px}nav{background:var(--paper)}.hero{grid-template-columns:1fr;padding:42px 25px 58px;gap:36px}.hero .eyebrow{margin-bottom:25px}h1{font-size:44px;margin-left:0;padding:15px 18px;max-width:100%;letter-spacing:-2px}.hero-aside{max-width:310px;width:calc(100% - 20px);justify-self:center;margin-top:6px}.hero-aside img{aspect-ratio:1/1}.hero-intro{font-size:16px}.section{padding:42px 24px}.section-heading h2{font-size:22px}.work-section{padding:42px 24px}.role{gap:10px}.contact-section{margin:16px 24px 30px;padding:26px}.contact-section h2{font-size:24px}.contact-section>a{font-size:14px;overflow-wrap:anywhere}footer{padding:24px}.horizontal-heading{gap:22px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+
+/* One accent family: periwinkle, balanced with warm paper and dark ink. */
+:root{--paper:#f8f6f0;--ink:#242b3d;--muted:#646979;--line:#d6d7de;--coral:#5365a8}
+.site-header,nav{background:var(--paper)}
+.wordmark span{color:#687cc0}
+.nav-cta{background:#f8f6f0;box-shadow:3px 3px 0 #cbd4ee}
+.hero{background:#e7ebf6}
+.hero .eyebrow,.hero-intro{color:#414b65}
+h1{background:#faf8f1;box-shadow:6px 6px 0 #8497cb}
+.button{background:#faf8f1;box-shadow:3px 3px 0 #8999c4}
+.button-primary{background:#3e568f;color:#fff}
+.button-primary:hover{background:#304575}
+.button-secondary:hover{background:#e1e7f4}
+.hero-aside img{box-shadow:10px 10px 0 #b4c2e3}
+.hero-aside:after{background:#faf8f1}
+.section-heading h2{background:#e7ebf6;box-shadow:4px 4px 0 #b6c3e0}
+.company,.card-label,.project-type{color:#5365a0}
+.tags span,.project-highlight .tags span,.project-card .tags span{background:#e8ecf5;color:#485574}
+.work-section{background:#e7ebf6}
+.work-section .section-heading h2{background:#faf8f1;box-shadow:4px 4px 0 #b6c3e0}
+.project-card,.project-highlight{background:#fcfaf5;box-shadow:4px 4px 0 #b9c5e0}
+.project-result strong{color:#3e568f}
+.project-result span{color:#535b6e}
+.background-card{background:#fcfaf5;border-color:#d0d4df}
+.publication-card{background:#edf0f8}
+.skills-card{background:#fcfaf5}
+.beyond-card{background:#edf0f8;border-color:#d0d4df}
+.beyond-card strong{color:var(--ink)}
+.contact-section{background:#303f65;box-shadow:6px 6px 0 #b6c3e0}
+.contact-section>a{color:#e2e9ff}
+a:focus-visible,button:focus-visible{outline-color:#536caf}
